@@ -1,0 +1,52 @@
+body {
+  background-image: url(house.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: rgba(200, 0, 40, 0.5);
+  font-size: 4em;
+}
+
+img {
+  display: block;
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px rgba(2, 2, 200, 0.5);
+  margin-top: 20px;
+
+}
+
+a {
+  display: inline-block;
+  border-width: 3px;
+  border-style: double;
+  border-color: white;
+  width: 46%;
+  height: 100%;
+  text-decoration: none;
+  background-color: rgba(200, 0, 100, 1);
+  text-align: center;
+  padding-top: 6px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+a:hover {
+  color: black;
+}
+
+nav {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  height: 25px;
+  margin-bottom: 50px;
+}
