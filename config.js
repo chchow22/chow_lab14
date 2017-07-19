@@ -14,8 +14,18 @@ app.config(function($routeProvider) {
       templateUrl: "cat.html"
     })
 
+    .when("/rat", {
+      controller: "routeCtrl",
+      templateUrl: "rat.html"
+    })
+
+    .when("/cub", {
+      controller: "routeCtrl",
+      templateUrl: "cub.html"
+    })
+
     .otherwise({
       controller: "routeCtrl",
-      templateUrl: "cat.html"
+      templateUrl: "404.html"
     });
 });
