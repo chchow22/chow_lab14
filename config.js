@@ -4,6 +4,11 @@ var app = angular.module("myModule");
 app.config(function($routeProvider) {
 
   $routeProvider
+    .when ("/", {
+      controller: "routeCtrl",
+      templateUrl: "dog.html"
+    })
+
     .when("/dog", {
       controller: "routeCtrl",
       templateUrl: "dog.html"
@@ -24,8 +29,12 @@ app.config(function($routeProvider) {
       templateUrl: "cub.html"
     })
 
-    .otherwise({
+    .when("/404", {
       controller: "routeCtrl",
       templateUrl: "404.html"
+    })
+
+    .otherwise({
+      redirectTo : '/404'
     });
 });
